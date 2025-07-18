@@ -29,7 +29,7 @@ I specialize in designing **high-performance cloud-native microservices**, archi
 **Databases:** PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch  
 **Messaging & Workflow:** Kafka, Celery, Temporal  
 **DevOps & Infra:** Kubernetes, Docker, Terraform, Nginx, GCP, AWS  
-**GenAI & Tooling:** OpenAI, LangGraph, VertexAI, Gemini, Prompt Engineering, LangSmith , RAG, MCP 
+**GenAI & Tooling:** LangGraph, VertexAI, OpenAI, Ollama, Prompt Engineering, LangSmith, RAG, MCP    
 **Developer Experience Tools:** Cursor, Trae, SonarQube, Snyk, Swagger, OpenAPI
 
 ---
