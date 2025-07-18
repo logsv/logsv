@@ -2,7 +2,7 @@
 
 🚀 **Engineering Leader | Backend & Systems Architect | GenAI Technologist**
 
-Welcome to my GitHub! I'm a backend and platform engineer with over a decade of experience building **scalable systems**, **distributed architectures**, and **AI-native platforms** in domains like **e-commerce, fintech**, and **healthcare**.
+Welcome to my GitHub! I'm a backend engineer with over a decade of experience building **scalable systems**, **distributed architectures**, and **AI-native platforms** in domains like **e-commerce, fintech**, and **healthcare**.
 
 I specialize in designing **high-performance cloud-native microservices**, architecting **fault-tolerant APIs**, and integrating **Generative AI** into real-time products. My goal is to solve system-level problems with elegant code, deep design thinking, and strong platform fundamentals.
 
