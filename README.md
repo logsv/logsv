@@ -54,7 +54,7 @@ I specialize in designing **high-performance cloud-native microservices**, archi
 
 ## 🎓 Education & Certifications
 
-🎓 MCA, Computer Science – *Jawaharlal Nehru University*  
+🎓 MCA, Computer Science – *Jawaharlal Nehru University, New Delhi*  
 📜 Generative AI for Everyone – DeepLearning.AI  
 📜 Python Certified – HackerRank  
 
