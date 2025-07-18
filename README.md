@@ -13,7 +13,7 @@ I specialize in designing **high-performance cloud-native microservices**, archi
 🛒 **Fynd Platform** – Scalable checkout & payment systems  
 - Designed event-driven, extensible architecture for **cart, offers, and split checkout**  
 - Created partner extension SDKs for PayU, CCAvenue, and JioOnePay  
-- Improved latency and resiliency at 1M+ API requests/min with **75ms response times**
+- Improved latency and resiliency at 1M+ API requests/min with **75 ms response times**
 
 🔬 **Gauze.md** – AI-native clinical decision platform  
 - Orchestrated real-time LLM pipelines using **LangGraph** for diagnostic workflows  
@@ -44,14 +44,11 @@ I specialize in designing **high-performance cloud-native microservices**, archi
 
 ---
 
-## 📦 Featured Work
+## 📦 Open Source project works
 
-While most of my work is in enterprise/private repos, I’ve also shared:
-- Architectural PoCs and microservices demos in Python, FastAPI, and Redis  
-- GenAI pipeline experiments using LangGraph, LLM routing, and system prompting  
-- Tools and scripts for CI/CD, testing, and DevOps automation
-
-➡️ Check out my pinned repos or reach out if you’d like to collaborate on open-source GenAI tooling or systems infrastructure.
+- [em-taskflow-ai](https://github.com/logsv/em-taskflow-ai) — AI-powered EM assistant for Jira, Notion, Calendar with RAG support  
+- [em-agentic-code-reviewer](https://github.com/logsv/em-agentic-code-reviewer) — Autonomous LLM-driven code review workflows and feedback automation  
+- [em-tools-mcp-server](https://github.com/logsv/em-tools-mcp-server) — JSON-RPC MCP server bridging Jira, Google Calendar & Notion for GenAI clients
 
 ---
 
