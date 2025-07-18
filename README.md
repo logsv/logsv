@@ -44,7 +44,7 @@ I specialize in designing **high-performance cloud-native microservices**, archi
 
 ---
 
-## 📦 Open Source project works
+## 📦 Open Source projects
 
 - [em-taskflow-ai](https://github.com/logsv/em-taskflow-ai) — AI-powered EM assistant for Jira, Notion, Calendar with RAG support  
 - [em-agentic-code-reviewer](https://github.com/logsv/em-agentic-code-reviewer) — Autonomous LLM-driven code review workflows and feedback automation  
