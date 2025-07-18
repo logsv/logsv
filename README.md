@@ -18,7 +18,7 @@ I specialize in designing **high-performance cloud-native microservices**, archi
 🔬 **Gauze.md** – AI-native clinical decision platform  
 - Orchestrated real-time LLM pipelines using **LangGraph** for diagnostic workflows  
 - Delivered GDPR-compliant backend with **FHIR integration**, **PACS**, and **DICOM viewer**  
-- Built multi-modal GenAI workflows with **MedLM**, **LangSmith**, and **VertexAI**
+- Built multi-modal GenAI workflows with **MedLM**, **LangGraph**, and **VertexAI**
 
 ---
 
