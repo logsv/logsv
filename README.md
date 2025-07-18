@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Vikas Kumar
 
-🚀 **Staff Engineer | Backend & Systems Architect | GenAI Technologist**
+🚀 **Engineer Leader | Backend & Systems Architect | GenAI Technologist**
 
 Welcome to my GitHub! I'm a backend and platform engineer with over a decade of experience building **scalable systems**, **distributed architectures**, and **AI-native platforms** in domains like **e-commerce, fintech**, and **healthcare**.
 
@@ -10,15 +10,15 @@ I specialize in designing **high-performance cloud-native microservices**, archi
 
 ## 🧠 Current Focus
 
-🔬 **Gauze.md** – AI-native clinical decision platform  
-- Orchestrated real-time LLM pipelines using **LangGraph** for diagnostic workflows  
-- Delivered GDPR-compliant backend with **FHIR integration**, **PACS**, and **DICOM viewer**  
-- Built multi-modal GenAI workflows with **MedLM**, **LangSmith**, and **VertexAI**
-
 🛒 **Fynd Platform** – Scalable checkout & payment systems  
 - Designed event-driven, extensible architecture for **cart, offers, and split checkout**  
 - Created partner extension SDKs for PayU, CCAvenue, and JioOnePay  
 - Improved latency and resiliency at 1M+ API requests/min with **75ms response times**
+
+🔬 **Gauze.md** – AI-native clinical decision platform  
+- Orchestrated real-time LLM pipelines using **LangGraph** for diagnostic workflows  
+- Delivered GDPR-compliant backend with **FHIR integration**, **PACS**, and **DICOM viewer**  
+- Built multi-modal GenAI workflows with **MedLM**, **LangSmith**, and **VertexAI**
 
 ---
 
