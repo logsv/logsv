@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Vikas Kumar
 
-🚀 **Engineer Leader | Backend & Systems Architect | GenAI Technologist**
+🚀 **Engineering Leader | Backend & Systems Architect | GenAI Technologist**
 
 Welcome to my GitHub! I'm a backend and platform engineer with over a decade of experience building **scalable systems**, **distributed architectures**, and **AI-native platforms** in domains like **e-commerce, fintech**, and **healthcare**.
 
