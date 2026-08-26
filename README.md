@@ -8,15 +8,15 @@ I enjoy working on problems involving **high availability, low latency, event-dr
 
 ## 🧭 What I Work On
 
-### AI & Developer Productivity
+### AI & Generative AI Systems
 
-I build practical GenAI systems that connect LLMs with engineering workflows, internal tools, and domain knowledge.
+I design and build production-oriented GenAI systems that combine **LLMs, RAG, agentic workflows, domain knowledge, and distributed backend systems** to solve complex business problems.
 
-- **RAG and agentic workflows** for engineering productivity
-- **MCP servers** that expose Jira, Notion, and Calendar context to AI clients
-- **LLM-powered code review** with GitHub Actions and multiple model providers
-- **Local-first AI** using Ollama and open-source models
-- **LLM evaluation workflows** and dataset/rubric development
+- **Gauze.md** — AI-native clinical decision platform using **LLMs, RAG, LangGraph, FHIR, PACS, and multimodal AI workflows** for clinical intelligence.
+- **Commerce Copilot** — Agentic commerce platform automating approximately **90% of payment and order-support workflows** using LLMs, tools, and domain-specific workflows.
+- **EM TaskFlow AI** — Engineering management intelligence platform combining **RAG, multi-agent workflows, MCP, local LLMs, and knowledge retrieval** across engineering and productivity systems.
+- **LLM Router** — Provider-agnostic LLM routing infrastructure with **cost-aware routing, rate limiting, retries, circuit breakers, and observability**.
+- **LLM Guardrails** — LLM security and governance infrastructure providing **PII/secret detection, prompt/output validation, tool-call controls, schema validation, and policy enforcement**.
 
 ### Distributed Backend Systems
 
@@ -56,7 +56,7 @@ Earlier at Fynd, I worked directly on fault-tolerant cart and payment systems ha
 **Architecture:** Microservices, event-driven systems, REST, GraphQL, distributed systems  
 **Messaging & Workflow:** Kafka, Temporal  
 **Databases & Storage:** PostgreSQL, MongoDB, Redis, MySQL, Elasticsearch, YugabyteDB  
-**AI / LLM:** OpenAI, Vertex AI, LangGraph, MCP, RAG, AI Agents, Agentic Workflows, pgvector, Pinecone, LangSmith, LLM Evaluation, RLHF  
+**AI / LLM:** OpenAI, Vertex AI, Ollama, LangGraph, MCP, RAG, AI Agents, Agentic Workflows, LLM Routing, LLM Guardrails, pgvector, ChromaDB, Pinecone, LangSmith, LLM Evaluation, RLHF  
 **Cloud & Infrastructure:** AWS, GCP, Kubernetes, Docker, Terraform, Jenkins  
 **Observability:** Prometheus, Grafana, New Relic, Jaeger, ELK Stack, Sentry  
 **Engineering:** CI/CD, high availability, performance optimization, security, GDPR, SOC2
@@ -65,7 +65,15 @@ Earlier at Fynd, I worked directly on fault-tolerant cart and payment systems ha
 
 ### [EM TaskFlow AI](https://github.com/logsv/em-taskflow-ai)
 
-AI-powered engineering productivity tooling combining **RAG, PDF knowledge bases, local LLMs, Ollama, ChromaDB, Node.js, Python, FastAPI, and React**.
+Full-stack, local-first engineering productivity platform using **100% local LLM inference with Ollama**, hybrid RAG with **HyDE + RRF + HNSW**, Redis semantic caching, a **LangGraph multi-agent supervisor**, and MCP integrations for Jira, Notion, GitHub, Slack, and Google Calendar.
+
+### [LLM Router](https://github.com/logsv/llm-router)
+
+TypeScript LLM routing infrastructure for **multi-provider model selection, cost-aware routing, rate limiting, retries, circuit breakers, and production observability**.
+
+### [LLM Guardrails](https://github.com/logsv/llmguardrails)
+
+LLM security and governance SDK focused on **PII masking, secret detection, prompt/output validation, tool-call controls, schema validation, and policy-as-code guardrails**.
 
 ### [EM Agentic Code Reviewer](https://github.com/logsv/em-agentic-code-reviewer)
 
@@ -79,7 +87,7 @@ More project context is available in [`PROJECT.md`](./PROJECT.md).
 
 ## 🔬 Areas of Interest
 
-`Distributed Systems` · `Backend Architecture` · `Payments` · `Event-Driven Systems` · `Observability` · `RAG` · `AI Agents` · `MCP` · `LLM Evaluation` · `Developer Productivity` · `Platform Engineering`
+`GenAI Systems` · `AI Agents` · `RAG` · `LLM Infrastructure` · `LLM Guardrails` · `MCP` · `Distributed Systems` · `Backend Architecture` · `Payments` · `Event-Driven Systems` · `Observability` · `Developer Productivity`
 
 ## 🎓 Education & Certifications
 
