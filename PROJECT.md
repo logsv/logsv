@@ -10,7 +10,7 @@ The portfolio is intentionally centered on systems I have designed and built rat
 
 **AI-native Clinical Decision Platform**
 
-Gauze.md is an AI-native healthcare platform focused on applying **LLMs, RAG, agentic workflows, and multimodal AI** to clinical decision support.
+Gauze.md is a cardiovascular AI product I launched at Fynd and built from scratch with a team of 5 engineers across ML, backend, and data. It applies **LLMs, RAG, agentic workflows, and ECG/ECHO analysis** to clinical decision support.
 
 ### Architecture & Capabilities
 
@@ -33,7 +33,7 @@ Commerce Copilot applies LLMs and agentic workflows to automate operational work
 
 ### Engineering Impact
 
-- Automated approximately **90% of payment and order-support workflows**.
+- Automated approximately **75% of support workflows** using LLMs and LangGraph over commerce APIs.
 - Uses LLM-powered reasoning combined with domain-specific tools and workflows.
 - Designed around asynchronous and fault-tolerant backend services.
 - Integrates operational context and transaction data to support automated resolution and actions.
@@ -65,81 +65,45 @@ EM TaskFlow AI combines **local LLM inference, hybrid RAG, multi-agent orchestra
 
 ---
 
-## 🧭 LLM Router
+## 🎬 LLM Video Editor
 
-**Provider-Agnostic LLM Routing Infrastructure**
+**Prompt-Driven Video Editing for YouTube and Shorts**
 
-**Repo:** [llm-router](https://github.com/logsv/llm-router)
+**Repo:** [llm-video-editor](https://github.com/logsv/llm-video-editor)
 
-A TypeScript-based routing layer designed to abstract multiple LLM providers and make model selection a first-class infrastructure concern.
-
-### Key Capabilities
-
-- **Multi-provider routing** across supported LLM backends.
-- **Cost-aware model selection** for controlling inference spend.
-- **Rate limiting and concurrency controls** for provider protection.
-- **Retries and circuit breakers** for resilient inference.
-- **Fallback routing** when providers or models become unavailable.
-- **Metrics and observability** for latency, failures, usage, and routing behavior.
-
-**Focus:** LLM Infrastructure · Model Routing · Reliability · Cost Optimization · Multi-Provider AI
-
----
-
-## 🛡️ LLM Guardrails
-
-**LLM Security, Safety & Governance SDK**
-
-**Repo:** [llmguardrails](https://github.com/logsv/llmguardrails)
-
-An LLM security and governance layer designed to enforce application policies around prompts, model responses, and tool execution.
+Point it at a clip or a folder of raw footage and describe the cut you want. An LLM plans the edit; a deterministic, checkpointed pipeline audits, renders, and publishes it. Footage never leaves the machine: only text (and optionally still frames) goes to the model.
 
 ### Key Capabilities
 
-- **PII detection and masking** before sensitive data reaches model providers.
-- **Secret and credential detection** to prevent accidental leakage.
-- **Prompt and output validation** for configurable security policies.
-- **Tool-call controls** to constrain agent capabilities.
-- **Schema validation** for structured model outputs.
-- **Policy-as-code** for repeatable application-level guardrails.
-- Designed to be usable as an **in-process security layer** around LLM applications and agents.
+- **Staged pipeline:** `watch → plan → b-roll → graphics / music / colour → cut-audit → take-geometry → review-gate → render → publish`, each stage writing a JSON checkpoint so re-runs reuse finished work.
+- **LLM picks segment ids, never timestamps**; a deterministic cut audit snaps to word edges, completes sentences, enforces the duration budget, and applies jump-cut pacing.
+- **Word-level transcription** with faster-whisper (chunked and parallel for long recordings).
+- **Face-aware layout** with MediaPipe: crops, caption bands, and picture-in-picture placed to avoid faces.
+- **Production render:** colour matching and looks, motion graphics, ducked licensed music, optional local AI narration, two-pass loudness normalisation to -14 LUFS, embedded chapters.
+- **Upload pack:** SEO title, description, tags, and three thumbnails.
+- **Two modes:** one-command `llmve auto`, or **agent mode** where Claude edits through an MCP tool server; planners via Claude, Ollama, Anthropic, or OpenAI with validated Pydantic outputs.
 
-**Focus:** LLM Security · AI Governance · PII Protection · Agent Security · Tool Controls · Policy Enforcement
-
----
-
-## 🤖 EM Agentic Code Reviewer
-
-**Repo:** [em-agentic-code-reviewer](https://github.com/logsv/em-agentic-code-reviewer)
-
-An autonomous LLM-driven code review assistant for engineering teams. It analyzes diffs, generates actionable comments, and produces strategic PR summaries.
-
-### Key Features
-
-- Automated diff analysis from branches, staged changes, and commits.
-- Multi-provider support including OpenAI, Gemini, Anthropic, and local models.
-- Strategic **What / Why / Risks / Actions** PR summaries.
-- GitHub Actions integration for automated review workflows.
-- Customizable anti-pattern and team-specific review rules.
-
-**Tech Stack:** Python · Ollama · LangGraph · GitHub Actions
+**Tech Stack:** Python · FFmpeg · faster-whisper · MediaPipe · Pydantic · MCP · LangGraph · Claude Code / Ollama
 
 ---
 
-## 🔗 EM Tools MCP Server
+## 📊 India Stock Analyzer (long-ledger)
 
-**Repo:** [em-tools-mcp-server](https://github.com/logsv/em-tools-mcp-server)
+**Claude Code Workspace for Long-Term Indian Equity Investors**
 
-A Model Context Protocol server providing unified LLM-friendly context and actions across **Jira, Google Calendar, and Notion**.
+**Repo:** [long-ledger](https://github.com/logsv/long-ledger)
 
-### Key Features
+A personal analysis workspace for NSE/BSE investors built on a simple principle: **code decides, Claude explains.** Claude fetches broker records, reads company documents, and explains results; a small deterministic Python core stores the data and computes every number.
 
-- Jira issue, project, and sprint access through JSON-RPC.
-- Google Calendar querying and scheduling.
-- Notion page and database access.
-- Session-based MCP protocol support.
+### Key Capabilities
 
-**Tech Stack:** Node.js · JSON-RPC · Express · Jira API · Google Calendar API · Notion API
+- **Read-only broker sync** via the official **Zerodha Kite and INDmoney MCP servers** and a read-only 5paisa client, with cross-broker reconciliation and no double counting.
+- **Company research subagent** that reads official filings first, records each fact's source and origin, and runs fact checks (unit errors, EPS vs PAT, impossible ratios) before anything is confirmed.
+- **Deterministic engine** for labels, confidence, risk flags, allocation limits, market regime (NIFTY trend, India VIX, breadth), and tax-lot views.
+- **Safety by design:** order tools denied in settings, untrusted data never treated as instructions, secrets kept out of chat, restricted sites blocked.
+- Trade-history imports (splits, transfers, demergers), audit log, and a local dashboard.
+
+**Tech Stack:** Python (standard library only) · SQLite · MCP · Claude Code slash commands & subagents
 
 ---
 
@@ -150,8 +114,8 @@ Across these projects, the common engineering themes are:
 - **Production GenAI:** moving beyond API integrations toward complete AI-powered systems.
 - **Agentic Architecture:** tool calling, bounded agents, orchestration, fallbacks, and workflow execution.
 - **RAG:** hybrid retrieval, reranking, semantic caching, and domain-grounded generation.
-- **LLM Infrastructure:** routing, resilience, cost optimization, observability, and provider abstraction.
-- **AI Security:** PII protection, secret detection, output validation, tool governance, and policy enforcement.
+- **Deterministic + LLM hybrids:** LLMs plan and explain while deterministic code audits, computes, and enforces rules.
+- **AI Safety by design:** read-only integrations, denied tools, untrusted-data handling, and validated structured outputs.
 - **Local-first AI:** privacy-preserving inference and smaller-model optimization with Ollama.
 - **Distributed Systems:** asynchronous workflows, service isolation, event-driven architecture, and fault tolerance.
 
